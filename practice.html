@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS 연습</title>
+    <!-- 아래 사이트 클론하여 BS 연습 계획 -->
+    <!-- https://getbootstrap.com/docs/5.0/examples/pricing/# -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex align-items-center">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94"
+                        role="img">
+                        <title>Bootstrap</title>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <span>Pricing example</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Enterprise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="pricing d-flex flex-column align-items-center text-center">
+            <h1>Pricing</h1>
+            <p>Quickly build an effective pricing table for your potential customers with<br>this Bootstrap example.
+                It’s built with default Bootstrap components and<br>utilities with little customization.</p>
+        </div>
+
+    </header>
+    <!-- 
+    <div class="main-container-fluid d-flex flex-row p-5 gap-4">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>Free</h3>
+                </div>
+                <div class="card-body">
+                    <blockquote
+                        class="blockquote mb-0 d-flex flex-column align-center justify-content-center text-center">
+                        <h1 class="price-info">$0/mo</h1>
+                        <p class="blockquote">10 users included
+                            <br>2 GB of storage
+                            <br>Email support
+                            <br>Help center access
+                        </p>
+                        <button type="button" class="btn btn-outline-primary btn-lg">Sign up for free</button>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>Pro</h3>
+                </div>
+                <div class="card-body">
+                    <blockquote
+                        class="blockquote mb-0 d-flex flex-column align-center justify-content-center text-center">
+                        <h1 class="price-info">$15/mo</h1>
+                        <p class="blockquote">20 users included
+                            <br>10 GB of storage
+                            <br>Priority email support
+                            <br>Help center access
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg">Get started</button>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>Enterprise</h3>
+                </div>
+                <div class="card-body">
+                    <blockquote
+                        class="blockquote mb-0 d-flex flex-column align-center justify-content-center text-center">
+                        <h1 class="price-info">$29/mo</h1>
+                        <p class="blockquote">30 users included
+                            <br>15 GB of storage
+                            <br>Phone and email support
+                            <br>Help center access
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg">Contact us</button>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 캐서셀 슬라이드 클래스에 넣고 이너 넣고 ,,,,,,,,,,,,,,캐러셀 아이템? 1번에 액티브 그 다음부터 아이템까지만 적ㄴ느다  -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <!-- 첫 번째 슬라이드 -->
+            <div class="carousel-item active">
+                <!-- 여기 월별 플랜 카드 3개 등 콘텐츠 -->
+                <div class="main container-fluid row m-1">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h3>Free</h3>
+                            </div>
+                            <div class="card-body">
+                                <blockquote
+                                    class="blockquote mb-0 d-flex flex-column align-center justify-content-center text-center">
+                                    <h1 class="price-info">$0/mo</h1>
+                                    <p class="blockquote">10 users included
+                                        <br>2 GB of storage
+                                        <br>Email support
+                                        <br>Help center access
+                                    </p>
+                                    <button type="button" class="btn btn-outline-primary btn-lg">Sign up for
+                                        free</button>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h3>Pro</h3>
+                            </div>
+                            <div class="card-body">
+                                <blockquote
+                                    class="blockquote mb-0 d-flex flex-column align-center justify-content-center text-center">
+                                    <h1 class="price-info">$15/mo</h1>
+                                    <p class="blockquote">20 users included
+                                        <br>10 GB of storage
+                                        <br>Priority email support
+                                        <br>Help center access
+                                    </p>
+                                    <button type="button" class="btn btn-primary btn-lg">Get started</button>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h3>Enterprise</h3>
+                            </div>
+                            <div class="card-body">
+                                <blockquote
+                                    class="blockquote mb-0 d-flex flex-column align-center justify-content-center text-center">
+                                    <h1 class="price-info">$29/mo</h1>
+                                    <p class="blockquote">30 users included
+                                        <br>15 GB of storage
+                                        <br>Phone and email support
+                                        <br>Help center access
+                                    </p>
+                                    <button type="button" class="btn btn-primary btn-lg">Contact us</button>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 두 번째 슬라이드 -->
+            <div class="carousel-item">
+                <!-- 여기 연간 플랜 카드 3개 등 콘텐츠 -->
+                <div class="main container-fluid row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h3>Free</h3>
+                            </div>
+                            <div class="card-body">
+                                <blockquote
+                                    class="blockquote mb-0 d-flex flex-column align-center justify-content-center text-center">
+                                    <h1 class="price-info">$0/yr</h1>
+                                    <p class="blockquote">10 users included
+                                        <br>2 GB of storage
+                                        <br>Email support
+                                        <br>Help center access
+                                    </p>
+                                    <button type="button" class="btn btn-outline-primary btn-lg">Sign up for
+                                        free</button>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h3>Pro</h3>
+                            </div>
+                            <div class="card-body">
+                                <blockquote
+                                    class="blockquote mb-0 d-flex flex-column align-center justify-content-center text-center">
+                                    <h1 class="price-info">$150/yr</h1>
+                                    <p class="blockquote">20 users included
+                                        <br>10 GB of storage
+                                        <br>Priority email support
+                                        <br>Help center access
+                                    </p>
+                                    <button type="button" class="btn btn-primary btn-lg">Get started</button>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h3>Enterprise</h3>
+                            </div>
+                            <div class="card-body">
+                                <blockquote
+                                    class="blockquote mb-0 d-flex flex-column align-center justify-content-center text-center">
+                                    <h1 class="price-info">$290/yr</h1>
+                                    <p class="blockquote">30 users included
+                                        <br>15 GB of storage
+                                        <br>Phone and email support
+                                        <br>Help center access
+                                    </p>
+                                    <button type="button" class="btn btn-primary btn-lg">Contact us</button>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 오른쪽 카드들 비율이 안맞느다 패딩 마진 요소 다 똑같은데  -->
+
+
+
+            <!-- 버튼이 안보인다 뭘 해도 안보인다 나중에 해결하자  -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"
+                style="z-index: 99;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"
+                style="z-index: 99;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+
+
+        </div>
+
+
+
+
+        <div class="compare">
+            <h1 class="plans text-center pt-2">Compare plans</h1>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 34%"></th>
+                        <th scope="col" style="width: 22%">Free</th>
+                        <th scope="col" style="width: 22%">Pro</th>
+                        <th scope="col" style="width: 22%">Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">Public</th>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Private</th>
+                        <td></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                    </tr>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">Permission</th>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sharing</th>
+                        <td></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Unlimited members</th>
+                        <td></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Extra security</th>
+                        <td></td>
+                        <td></td>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg></td>
+                    </tr>
+                </tbody>
+</table>
+
+
+
+        </div>
+
+
+
+
+        <footer>
+
+
+        </footer>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+        <script src="practice.js" defer></script>
+</body>
+
+</html>
