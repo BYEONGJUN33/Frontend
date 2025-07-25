@@ -113,20 +113,20 @@
         $("#fadeBtn").click(function () {
             $("#myImg").fadeToggle();
 
-        //     //W3C 실습 .             실패 아직 할 단계아님
-        //     const opacityTree = $("#myImg").css("opacity")
+            //     //W3C 실습 .          조건문 달아보려 했는데 실패 나중에 다시..
+            //     const opacityTree = $("#myImg").css("opacity")
 
-        //     if ((opacityTree === "1" || opacityTree === 1)&& currentWidth < 10000) {
-        //     $("#myImg").animate({
-        //         opacity: '1',
-        //         width: '10000px'
-        //     });
-        // } else {
-        //     $("#myImg").animate({
-        //         opacity: '0.4'
+            //     if ((opacityTree === "1" || opacityTree === 1)&& currentWidth < 10000) {
+            //     $("#myImg").animate({
+            //         opacity: '1',
+            //         width: '10000px'
+            //     });
+            // } else {
+            //     $("#myImg").animate({
+            //         opacity: '0.4'
 
-        //     })
-        // }
+            //     })
+            // }
         });
 
 
@@ -139,7 +139,7 @@
 
 
         //on이 부모요소인 list에 이벤트를 먼저 연결 -> 버블링?되어 부모가 감지 가능 ->콜백? 실행 -> 이래야 추가 li 인식가능
-        $("#list").on("click", "li", function () {
+        $("#list").on("dblclick", "li", function () {
             $(this).remove();
         });
 
@@ -178,6 +178,27 @@
 
 
 
+
+
+
+        //삭제버튼 만들기 
+
+        //리스트 내부의 li 요소에 마우스가 들어올 때 이벤트 설정 
+        $("#list").on("mouseenter", "li", function () {
+            if ($(this).find("button.delBtn").length === 0); { // length === 0 DOM요소는 배열을 가지고 있는데 0을 줘서 버튼이 없으면 생성되게 조건 걸어야한다고한다 , 중복생성 방지용 조건문....
+                $(this).append('<button class="delBtn">DEL</button>');
+            }
+        });
+
+        //마우스 떠나면 사라지게 
+        $("#list").on("mouseleave", "li", function () {
+            $(this).find(".delBtn").remove(); //li요소안에 있는 delBtn을 찾아서 제거한다 
+        });
+
+        $("#list").on("click", "button.delBtn", function (event) { //event는 핸들러가 발생했을 때 매개변수로 전달되는 이벤트 정보. 클릭되면 좌표로 
+            event.stopPropagation(); // 전파, 버블링 막는 메서드라고 한다. ,,,, 부모 li요소 등으로 전달되어 중복 동작하는 것을 방지한다 여기서는 필요없어 보인다
+            $(this).closest("li").remove(); // closest("li")는 본인 또는 부모 중 가장 가까운 <li> 요소를 선택함
+        });
     </script>
 </body>
 
