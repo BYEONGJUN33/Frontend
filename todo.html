@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <ul id="list">
+        <li>청소하기</li>
+        <li>공부하기</li>
+    </ul>
+    <input type="text" id="myInput" placeholder="할 일을 입력하세요" style="text-align: center;">
+    <button id="addbtn">할일목록추가</button>
+    <button id="addDbBtn">중요목록추가</button>
+    <br><br>
+    <button id="hideBtn">숨기기</button>
+    <button id="showBtn">보이기</button>
+    <p id="text">Hello, jQuery!</p>
+    <br><br>
+    <button id="fadeBtn">이미지 토글</button>
+    <br>
+    <img id="myImg"
+        src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-cute-cartoon-style-green-tree-vector-transparent-png-image_1327682.jpg"
+        style="width: 100px; height: 100px;" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // append()_고정 요소 추가하기 (마지막 자식으로 추가 )
+        // $("#addbtn").click(function () {
+        //     $("#list").append("<li>녹화강의 보기</li>");
+        // });
+
+        //input value 가져오기 
+        $("#addbtn").click(function () {
+            const inputVal = $("#myInput").val().trim();
+            console.log("인풋값 :", inputVal);
+
+            //if문으로 빈칸 추가 방지
+            if (inputVal === "") {
+                alert("값을 추가해주세요.")
+                return;
+            }
+
+            $("#list").append(`<li>${inputVal}</li>`);
+
+            //값 삭제
+            $("#myInput").val("");
+        });
+
+
+
+        // 더블 클릭시 글자 빨갛게 
+        $("#addDbBtn").dblclick(function () {
+            const inputValDb = $("#myInput").val().trim();
+            //trim이 앞뒤 공백 없이 보이게
+
+            //if문으로 빈칸 추가 방지
+            if (inputValDb === "") {
+                alert("값을 추가해주세요.")
+                return;
+            };
+
+            //두 함수는 같은 리스트(#list)에 아이템을 추가하는 행동은 동일하지만, 동작 시점과 실행 흐름이 다릅니다.
+            // 스코프 개념으로 변수 하나면 될 줄 알았는데 css요소로 흐름이 다르기에? 새로운 상수를 선언해야한다고 한다....?
+            const DbVal = $(`<li>${inputValDb}</li>`)
+
+            $("#list").append(DbVal)
+            DbVal.css("color", "red");
+            // 글자 전부 빨갛게 되는 문제 
+
+            //값 삭제
+            $("#myInput").val("");
+        });
+
+
+
+
+
+        // 숨기기  보이기 버튼 생성 
+        $("#hideBtn").click(function () {
+            $("#text").hide();
+        });
+        $("#showBtn").click(function () {
+            $("#text").show();
+        });
+
+
+        //토글 과제 부분
+        $("#fadeBtn").click(function () {
+            $("#myImg").fadeToggle();
+        });
+
+
+
+        //         //클릭 시 삭제 수행 
+        //         $("li").dblclick(function () {
+        //             $(this).remove();
+        //         });
+        // // 이렇게 했는데 이러면 이미 존재하는 li에게만 바인딩 되어 추가되는 li요소는 삭제 안됨 
+
+
+        //on이 부모요소인 list에 이벤트를 먼저 연결 -> 버블링?되어 부모가 감지 가능 ->콜백? 실행 -> 이래야 추가 li 인식가능
+        $("#list").on("click", "li", function () {
+            $(this).remove();
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>
