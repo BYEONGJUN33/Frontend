@@ -13,6 +13,10 @@
     <ul id="list">
         <li>청소하기</li>
         <li>공부하기</li>
+        <li>청소하기</li>
+        <li>공부하기</li>
+        <li>청소하기</li>
+        <li>공부하기</li>
     </ul>
     <input type="text" id="myInput" placeholder="할 일을 입력하세요" style="text-align: center;">
     <button id="addbtn">할일목록추가</button>
@@ -27,7 +31,11 @@
     <img id="myImg"
         src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-cute-cartoon-style-green-tree-vector-transparent-png-image_1327682.jpg"
         style="width: 100px; height: 100px;" />
-
+    <br> <br> <br> <br>
+    <button id="testBtn1">여러가지1</button>
+    <button id="testBtn2">여러가지2</button>
+    <button id="testBtn3">여러가지3</button>
+    <button id="testBtn4">여러가지4</button>
 
 
 
@@ -104,6 +112,21 @@
         //토글 과제 부분
         $("#fadeBtn").click(function () {
             $("#myImg").fadeToggle();
+
+        //     //W3C 실습 .             실패 아직 할 단계아님
+        //     const opacityTree = $("#myImg").css("opacity")
+
+        //     if ((opacityTree === "1" || opacityTree === 1)&& currentWidth < 10000) {
+        //     $("#myImg").animate({
+        //         opacity: '1',
+        //         width: '10000px'
+        //     });
+        // } else {
+        //     $("#myImg").animate({
+        //         opacity: '0.4'
+
+        //     })
+        // }
         });
 
 
@@ -120,6 +143,37 @@
             $(this).remove();
         });
 
+
+        // W3c 실습 
+        $("#testBtn1").click(function () {
+            $("li").slideToggle(3000);
+        });
+
+
+
+
+        $("#testBtn2").click(function () {
+            $("li").fadeToggle(3000);
+            // alert("토글 완료")
+        });
+
+        //왼쪽에서 얼마나 떨어져 있는가 => animate({left: ...})
+        $("#testBtn3").click(function () {
+            $("li").css("position", "relative").animate({ left: '300px' }, 3000);
+        });
+
+
+        //  높이 설정 
+        //         $("#testBtn4").click(function () {
+        //             $("li").animate({ height : ' 500px '});
+        // });
+
+
+
+
+        $("#testBtn4").click(function () {
+            $("li").animate({ height: ' 500px ' });
+        });
 
 
 
