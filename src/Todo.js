@@ -31,13 +31,13 @@ export default function Todo() {
         { id: 2, text: '공부하기' },
     ]);
 
-    const [inputValue, setInputValue] = useState(''); 
+    const [inputValue, setInputValue] = useState('');
     // React 상태를 선언하는 구문...inputValue는 상태 변수라고 하는데 다음에 알아보자..
 
 
 
 
-// 새 항목을 추가하는 함수 
+    // 새 항목을 추가하는 함수 
     const addTodo = () => {
         const trimmed = inputValue.trim();
         // trimmed라는 변수가 input값 trim처리해서 저장됨 그걸 아래 조건문if문으로 alert 기능 추가 및 리턴 추가
@@ -55,7 +55,7 @@ export default function Todo() {
     };
 
 
-// 여기가 컴포넌트가 렌더링할 UI를 그려줄 JSX로 반환하는 부분이라고 한다 
+    // 여기가 컴포넌트가 렌더링할 UI를 그려줄 JSX로 반환하는 부분이라고 한다 
     return (
         <div>
             <h2>할 일 목록</h2>
@@ -68,7 +68,7 @@ export default function Todo() {
                 {/* li로 todo.id값 받아와서 > todo에 적힌 text를 넣어서 표현 */}
             </ul>
 
-{/* 입력창 구현하는 파트 */}
+            {/* 입력창 구현하는 파트 */}
             <input
                 type="text"
                 placeholder="할 일을 입력하세요"
