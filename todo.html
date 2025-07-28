@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <ul id="list">
+        <li>청소하기</li>
+        <li>공부하기</li>
+        <li>청소하기</li>
+        <li>공부하기</li>
+        <li>청소하기</li>
+        <li>공부하기</li>
+    </ul>
+    <input type="text" id="myInput" placeholder="할 일을 입력하세요" style="text-align: center;">
+    <button id="addbtn">할일목록추가</button>
+    <button id="addDbBtn">중요목록추가</button>
+    <br><br>
+    <button id="hideBtn">숨기기</button>
+    <button id="showBtn">보이기</button>
+    <p id="text">Hello, jQuery!</p>
+    <br><br>
+    <button id="fadeBtn">이미지 토글</button>
+    <br>
+    <img id="myImg"
+        src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-cute-cartoon-style-green-tree-vector-transparent-png-image_1327682.jpg"
+        style="width: 100px; height: 100px;" />
+    <br> <br> <br> <br>
+    <button id="testBtn1">여러가지1</button>
+    <button id="testBtn2">여러가지2</button>
+    <button id="testBtn3">여러가지3</button>
+    <button id="testBtn4">여러가지4</button>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // append()_고정 요소 추가하기 (마지막 자식으로 추가 )
+        // $("#addbtn").click(function () {
+        //     $("#list").append("<li>녹화강의 보기</li>");
+        // });
+
+        //input value 가져오기 
+        $("#addbtn").click(function () {
+            const inputVal = $("#myInput").val().trim();
+            console.log("인풋값 :", inputVal);
+
+            //if문으로 빈칸 추가 방지
+            if (inputVal === "") {
+                alert("값을 추가해주세요.")
+                return;
+            }
+
+            $("#list").append(`<li>${inputVal}</li>`);
+
+            //값 삭제
+            $("#myInput").val("");
+        });
+
+
+
+        // 더블 클릭시 글자 빨갛게 
+        $("#addDbBtn").dblclick(function () {
+            const inputValDb = $("#myInput").val().trim();
+            //trim이 앞뒤 공백 없이 보이게
+
+            //if문으로 빈칸 추가 방지
+            if (inputValDb === "") {
+                alert("값을 추가해주세요.")
+                return;
+            };
+
+            //두 함수는 같은 리스트(#list)에 아이템을 추가하는 행동은 동일하지만, 동작 시점과 실행 흐름이 다릅니다.
+            // 스코프 개념으로 변수 하나면 될 줄 알았는데 css요소로 흐름이 다르기에? 새로운 상수를 선언해야한다고 한다....?
+            const DbVal = $(`<li>${inputValDb}</li>`)
+
+            $("#list").append(DbVal)
+            DbVal.css("color", "red");
+            // 글자 전부 빨갛게 되는 문제 
+
+            //값 삭제
+            $("#myInput").val("");
+        });
+
+
+
+
+
+        // 숨기기  보이기 버튼 생성 
+        $("#hideBtn").click(function () {
+            $("#text").hide();
+        });
+        $("#showBtn").click(function () {
+            $("#text").show();
+        });
+
+
+        //토글 과제 부분
+        $("#fadeBtn").click(function () {
+            $("#myImg").fadeToggle();
+
+            //     //W3C 실습 .          조건문 달아보려 했는데 실패 나중에 다시..
+            //     const opacityTree = $("#myImg").css("opacity")
+
+            //     if ((opacityTree === "1" || opacityTree === 1)&& currentWidth < 10000) {
+            //     $("#myImg").animate({
+            //         opacity: '1',
+            //         width: '10000px'
+            //     });
+            // } else {
+            //     $("#myImg").animate({
+            //         opacity: '0.4'
+
+            //     })
+            // }
+        });
+
+
+
+        //         //클릭 시 삭제 수행 
+        //         $("li").dblclick(function () {
+        //             $(this).remove();
+        //         });
+        // // 이렇게 했는데 이러면 이미 존재하는 li에게만 바인딩 되어 추가되는 li요소는 삭제 안됨 
+
+
+        //on이 부모요소인 list에 이벤트를 먼저 연결 -> 버블링?되어 부모가 감지 가능 ->콜백? 실행 -> 이래야 추가 li 인식가능
+        $("#list").on("dblclick", "li", function () {
+            $(this).remove();
+        });
+
+
+        // W3c 실습 
+        $("#testBtn1").click(function () {
+            $("li").slideToggle(3000);
+        });
+
+
+
+
+        $("#testBtn2").click(function () {
+            $("li").fadeToggle(3000);
+            // alert("토글 완료")
+        });
+
+        //왼쪽에서 얼마나 떨어져 있는가 => animate({left: ...})
+        $("#testBtn3").click(function () {
+            $("li").css("position", "relative").animate({ left: '300px' }, 3000);
+        });
+
+
+        //  높이 설정 
+        //         $("#testBtn4").click(function () {
+        //             $("li").animate({ height : ' 500px '});
+        // });
+
+
+
+
+        $("#testBtn4").click(function () {
+            $("li").animate({ height: ' 500px ' });
+        });
+
+
+
+
+
+
+
+        //삭제버튼 만들기 
+
+        //리스트 내부의 li 요소에 마우스가 들어올 때 이벤트 설정 
+        $("#list").on("mouseenter", "li", function () {
+            if ($(this).find("button.delBtn").length === 0); { // length === 0 DOM요소는 배열을 가지고 있는데 0을 줘서 버튼이 없으면 생성되게 조건 걸어야한다고한다 , 중복생성 방지용 조건문....
+                $(this).append('<button class="delBtn">DEL</button>');
+            }
+        });
+
+        //마우스 떠나면 사라지게 
+        $("#list").on("mouseleave", "li", function () {
+            $(this).find(".delBtn").remove(); //li요소안에 있는 delBtn을 찾아서 제거한다 
+        });
+
+        $("#list").on("click", "button.delBtn", function (event) { //event는 핸들러가 발생했을 때 매개변수로 전달되는 이벤트 정보. 클릭되면 좌표로 
+            event.stopPropagation(); // 전파, 버블링 막는 메서드라고 한다. ,,,, 부모 li요소 등으로 전달되어 중복 동작하는 것을 방지한다 여기서는 필요없어 보인다
+            $(this).closest("li").remove(); // closest("li")는 본인 또는 부모 중 가장 가까운 <li> 요소를 선택함
+        });
+    </script>
+</body>
+
+</html>
