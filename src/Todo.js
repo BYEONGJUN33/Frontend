@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
-
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import App from './App';
 
 
 // export default function Todo() {
@@ -82,3 +83,6 @@ export default function Todo() {
     );
 }
 //사용자의 입력 → onChange 이벤트 발생 → 상태 변경 → React가 UI 다시 렌더링 이라는 구조
+
+
+
