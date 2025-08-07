@@ -1,6 +1,6 @@
-import FootNote from "../05_FootNote";
-import FootNav from "../06_FootNav";
-import FooterBottom from "../07_FooterBottom";
+import FootNote from "./05_FootNote";
+import FootNav from "./06_FootNav";
+import FooterBottom from "./07_FooterBottom";
 
 
 

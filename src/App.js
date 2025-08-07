@@ -1,7 +1,7 @@
-import Header from "./components/01_Header";
-import MainBanner from "./components/02_MainBanner";
-import SubBanner from "./components/03_SubBanner";
-import AdToMap from "./components/04_AdToMap";
+import Header from "./components/header/01_Header";
+import MainBanner from "./components/footer/main/02_MainBanner";
+import SubBanner from "./components/footer/main/03_SubBanner";
+import AdToMap from "./components/footer/main/04_AdToMap";
 // import FootNote from "./components/footer/05_FootNote";
 // import FootNav from "./components/footer/06_FootNav";
 // import FooterBottom from "./components/footer/07_FooterBottom";
