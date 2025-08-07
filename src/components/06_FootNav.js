@@ -1,0 +1,144 @@
+const FootNav = () => {
+
+
+    return(
+        <>
+        <footer class="footer">
+        <nav className="footer-nav">
+
+            <div>
+                <div>
+                    <h3>
+                        <span>쇼핑 및 알아보기</span>
+                    </h3>
+                    <ul>
+                        <li><a href="/">스토어</a></li>
+                        <li><a href="/">Mac</a></li>
+                        <li><a href="/">iPad</a></li>
+                        <li><a href="/">iPhone</a></li>
+                        <li><a href="/">Watch</a></li>
+                        <li><a href="/">Vision</a></li>
+                        <li><a href="/">AirPods</a></li>
+                        <li><a href="/">TV 및 홈</a></li>
+                        <li><a href="/">AirTag</a></li>
+                        <li><a href="/">액세서리</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>
+                        <span>Apple 지갑</span>
+                    </h3>
+                    <ul>
+                        <li><a href="/">지갑</a></li>
+                        <li><a href="/">Apple Pay</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>
+                        <span>계정</span>
+                    </h3>
+                    <ul>
+                        <li><a href="/">Apple 계정 관리</a></li>
+                        <li><a href="/">Apple Store 계정</a></li>
+                        <li><a href="/">iCloud.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>
+                        <span>엔터테인먼트</span>
+                    </h3>
+                    <ul>
+                        <li><a href="/">Apple One</a></li>
+                        <li><a href="/">Apple TV+</a></li>
+                        <li><a href="/">Apple Music</a></li>
+                        <li><a href="/">Apple Arcade</a></li>
+                        <li><a href="/">Apple 팟캐스트</a></li>
+                        <li><a href="/">Apple Books</a></li>
+                        <li><a href="/">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>
+                        <span>Apple Store</span>
+                    </h3>
+                    <ul>
+                        <li><a href="/">매장 찾기</a></li>
+                        <li><a href="/">Genius Bar</a></li>
+                        <li><a href="/">Today at Apple</a></li>
+                        <li><a href="/">그룹 예약</a></li>
+                        <li><a href="/">Apple 캠프</a></li>
+                        <li><a href="/">Apple Store 앱</a></li>
+                        <li><a href="/">인증 리퍼비쉬 제품</a></li>
+                        <li><a href="/">Apple Trade In</a></li>
+                        <li><a href="/">할부 방식</a></li>
+                        <li><a href="/">주문 상태</a></li>
+                        <li><a href="/">쇼핑 도움말</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>
+                        <span>비즈니스</span>
+                    </h3>
+                    <ul>
+                        <li><a href="/">Apple과 비즈니스</a></li>
+                        <li><a href="/">비즈니스를 위한 제품 쇼핑하기</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>
+                        <span>교육</span>
+                    </h3>
+                    <ul>
+                        <li><a href="/">Apple과 교육</a></li>
+                        <li><a href="/">초중고용 제품 쇼핑하기</a></li>
+                        <li><a href="/">대학 생활을 위한 제품 쇼핑하기</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>
+                        <span>Apple의 가치관</span>
+                    </h3>
+                    <ul>
+                        <li><a href="/">손쉬운 사용</a></li>
+                        <li><a href="/">교육</a></li>
+                        <li><a href="/">환경</a></li>
+                        <li><a href="/">개인정보 보호</a></li>
+                        <li><a href="/">공급망 혁신</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>
+                        <span>Apple 정보</span>
+                    </h3>
+                    <ul>
+                        <li><a href="/">Newsroom</a></li>
+                        <li><a href="/">Apple 리더십</a></li>
+                        <li><a href="/">채용 안내</a></li>
+                        <li><a href="/">윤리 및 규정 준수</a></li>
+                        <li><a href="/">이벤트</a></li>
+                        <li><a href="/">일자리 창출</a></li>
+                        <li><a href="/">Apple 연락처</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        </footer>
+</>
+    )
+}
+
+export default FootNav

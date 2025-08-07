@@ -1,0 +1,848 @@
+/* @font-face {
+    font-family: 'AppleSDGothicNeo';
+    src: url('./components/fonts/AppleSDGothicNeoB.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    src: url('./components/fonts/AppleSDGothicNeoEB.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    src: url('./components/fonts/AppleSDGothicNeoH.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    src: url('./components/fonts/AppleSDGothicNeoL.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    src: url('./components/fonts/AppleSDGothicNeoM.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    src: url('./components/fonts/AppleSDGothicNeoR.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    src: url('./components/fonts/AppleSDGothicNeoSB.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    src: url('./components/fonts/AppleSDGothicNeoT.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    src: url('./components/fonts/AppleSDGothicNeoUL.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+} */
+
+body {
+    font-family: 'AppleSDGothicNeo', sans-serif;
+}
+
+/* 여기까지 폰트 설정 */
+
+
+
+/* 헤더 시작 */
+
+#globalheader {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    /* 색상지정에 약간 불투명 */
+    backdrop-filter: blur(10px);
+    /* 약간의 투명 + 블러 효과  */
+    height: 44px;
+    max-height: 44px;
+
+
+}
+
+.headernav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    gap: 24px;
+    font-weight: normal;
+    /* font-weight: bold; */
+    /* margin: 0 -8px; */
+}
+
+.headernav li {
+    padding: 0 9px;
+}
+
+.headernav a {
+    color: black;
+    text-decoration: none;
+
+}
+
+/*                   main파트 시작                 */
+
+.hero-banner {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border-bottom-width: 12px;
+    /* 이거 필요한가? 위에 태그 ? 나중에 확인  */
+    text-align: center;
+    padding-bottom: 12px;
+    gap: 12px;
+    height: 2130px;
+    width: 100%;
+
+}
+
+.card-iPhone {
+    background-image: url(https://www.apple.com/kr/home/images/heroes/iphone-family/hero_iphone_family__fuz5j2v5xx6y_largetall_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 53px;
+
+}
+
+.card-MacBook-Air {
+    background-image: url(https://www.apple.com/v/home/cg/images/heroes/macbook-air/hero_macbook_air_avail__fpm99qgohx2e_largetall_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 53px;
+    padding-bottom: 23px;
+
+}
+
+.card-iPadPro {
+    background-image: url(https://www.apple.com/v/home/cg/images/heroes/ipad-pro/hero_ipadpro_avail__d6ddfjws77ue_largetall.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 53px;
+    color: white;
+
+}
+
+/*              서브 카트 파트 시작                  */
+.Sub-banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    width: 100%;
+    gap: 12px;
+    border-bottom: 12px;
+    border-style: solid;
+    border-color: white;
+
+}
+
+
+.card-Pay {
+    background-image: url(https://www.apple.com/kr/home/images/promos/apple-transit/promo_transit_iphone__eysxqd50mwa6_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+}
+
+.card-iPadair {
+    background-image: url(https://www.apple.com/v/home/cg/images/promos/ipad-air/promo_ipad_air__bfbxzvw65c02_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+}
+
+.card-WATCH {
+    background-image: url(https://www.apple.com/v/home/cg/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail_lte__c70y29goir42_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+}
+
+.card-MacBookPro {
+    background-image: url(https://www.apple.com/v/home/cg/images/promos/macbook-pro/promo_macbookpro_announce__gdf98j6tj2ie_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+    color: white;
+}
+
+.card-Airpods4-Air {
+    display: block;
+    /* a태그는 기본 inline이어서 블록으로 변경해줘야함 */
+    background-image: url(https://www.apple.com/v/home/cg/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+    color: white;
+
+}
+
+.Sub-card-flex {
+    height: 100%;
+    /* 높이 줬더니 flex-end 먹힘.. */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 42px;
+
+}
+
+/* 위에 에어팟 배너가 모범 답안이라 이런식으로 전체 교정해야함 */
+
+
+.card-TradeIn {
+    background-image: url(https://www.apple.com/v/home/cg/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+}
+
+
+
+
+/* 푸터 시작 구간  */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 980px;
+}
+
+.footer-notes {
+    padding: 17px 0 11px 0;
+    /* width: 980px; */
+    /* height: 340px; */
+    word-break: keep-all;
+
+}
+
+.footer-notes ul {
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 12px;
+    list-style: none;
+    text-align: start;
+    border-bottom: 0.1px solid #c7c7c7;
+    padding-inline-start: 0;
+
+}
+
+.footer-notes ul li {
+    /* gap: 12px; */
+    color: rgba(0, 0, 0, 0.56);
+    margin-bottom: 9.6px;
+}
+
+.footer-notes a {
+    /* text-decoration: none;       이거 밑줄 */
+    color: #666666;
+
+}
+
+
+/* 여기부터 푸터 네브바 구간  */
+
+.footer-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    line-height: 16px;
+    word-break: keep-all;
+    text-wrap: nowrap;
+    max-width: 100%;
+}
+
+.footer-nav div {
+    padding: 12px 27px 0 0;
+}
+
+.footer-nav span {
+    margin: 0 20px 9.6px 0;
+    /* 내일 span 태그 자체 너비 키우고 나머지 플렉스 배치 손봐서 너비 줄여서 간격 줄이고 li 요소들 전부 일정 규칙으로 배치  */
+}
+
+
+.footer-nav ul {
+    padding-inline-start: 0;
+    list-style: none;
+
+}
+
+.footer-nav li {
+    margin-bottom: 9.6px;
+}
+
+.footer-nav a {
+    color: #666666;
+    text-decoration: none;
+
+}
+
+.footer-nav h3 {
+    font-weight: 600;
+    margin: 0 20px 9.6px 0;
+}
+
+
+
+
+
+
+
+
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* margin: auto 200px; */
+    font-size: 12px;
+    width: 100%;
+}
+
+
+.footer-ABC {
+    width: 100%;
+    padding: 37px 0 11px 0;
+    color: #666666;
+}
+
+.footer-ABC a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.footer-shop {
+    padding-bottom: 19px;
+    border-bottom: 1px solid #666666;
+    margin-bottom: 16px;
+
+}
+
+.footer-shop a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
+
+}
+
+.footer-legal-links {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.footer-legal-links li {
+    margin: 5px 6px 0 0;
+    border-right: 0.1px solid #666666;
+    padding-right: 9px;
+}
+
+/* 마지막 자식요소 오른쪽 경계선 없애기 */
+.footer-legal-links li:last-child {
+    border-right: none;
+}
+
+.footer-locale {
+    font-weight: bold;
+}
+
+.requirement {
+    color: #666666;
+    /* font-size: 11px; */
+}
+
+.requirement a {
+    color: black;
+
+}
+
+
+
+
+
+/* 공용 버튼들 디자인 하기 / (더 알아보기), (쇼핑하기 ) / Apple intelligence 무지개 문구  */
+
+/* 빈 div 상자  */
+.spacer {
+    height: 360px;
+}
+
+.spacer-sub {
+    height: 300px;
+}
+
+
+/* 버튼들 위에 마진 */
+.btn-top {
+    margin-top: 18px;
+    height: 44px;
+}
+
+
+/* 더 알아보기 */
+.btn-learn {
+    border: 1px;
+    background-color: #0071e3;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    min-width: 28px;
+    padding: 11px 21px;
+    border-radius: 980px;
+    font-weight: 400;
+    white-space: nowrap;
+    /* 이게 줄어들어도 안 망가지는 거네.. */
+    height: 44px;
+}
+
+.btn-learn:hover {
+    background-color: #0077eD;
+    color: #fff;
+}
+
+
+/* 쇼핑하기 및 구입하기 */
+.btn-shop {
+    border: 1px;
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 17px;
+    font-weight: 400;
+    min-width: 28px;
+    padding: 11px 21px;
+    border-style: solid;
+    border-radius: 9999px;
+    border-width: 1px;
+    border-color: #0066cc;
+    margin-left: 13px;
+    height: 44px;
+
+}
+
+.btn-shop:hover {
+    background-color: #0077eD;
+    color: #fff;
+}
+
+
+
+/* Apple intelligence */
+.subhead {
+    margin-top: 6px;
+    height: 44px;
+    word-break: keep-all;
+    line-height: 44px;
+    /* 높이와 동일 크기로 중앙정렬 된다. */
+    /* white-space: nowrap; */
+}
+
+.ai-gradient {
+    background: linear-gradient(90deg, #31a8ff, #6e56fd, #ea4c89, #ee8700);
+    /* 무지개 느낌의 색상 조합 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* 위 두줄이 텍스트에만 그라데이션 적용하는 역할 */
+    font-size: 24px;
+    font-weight: bold;
+    background-clip: text;
+    /* 크로스 브라우저? */
+    /* text-fill-color: transparent; */
+
+    margin: 16px 0 0 0;
+    /* 왜 마진이 안먹지? */
+
+    /* height: 27px;
+    width: 100%; */
+
+}
+
+.callout {
+    font-size: 14px;
+    letter-spacing: 0.168px;
+    color: #6e6e73;
+    word-break: keep-all;
+    height: 19px;
+}
+
+
+
+
+/* 여기가 그 배너들 문구 디자인 css파트 */
+.main h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    word-break: keep-all;
+}
+
+.main a {
+    text-decoration: none;
+}
+
+.item-intro {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 5px;
+    letter-spacing: .012em;
+}
+
+.bg-link {
+    /* display: block; */
+    width: 300px;
+    height: 200px;
+    /* background-image: url('/'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.Sub-banner-container h3 {
+    margin-top: 42px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: .002em;
+    /* width: 90%;
+    max-width: 330px;
+    text-align: center; */
+
+}
+
+.Sub-banner-container
+/* ========================== Ad 배너 영역 시작 ============================ */
+/* 광고판 캐러셀 적용해야함/ 외 양옆 요소 보이고 블러처리/ 아래 개수대로 넘어갈때 디자인 / 오른쪽 아래 캐러셀 멈춤 버튼 */
+
+/* 광고 캐러셀 전체 영역 */
+.Ad-banner {
+    width: 100%;
+
+    /* margin: 0 auto; */
+    /* 블록요소라 없어도 된다고 한다 */
+    position: relative;
+    /* 이 포지션이 absolute가 참조할 기준점이다 */
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+/* 캐러셀 가시 영역 */
+.carousel-window {
+    width: 100%;
+
+    overflow: hidden;
+    position: relative;
+    padding: 0 60px;
+}
+
+
+
+/* ===================== [1단계] 양옆 블러 효과 추가하기  ======================================*/
+/* ::before, ::after는 HTML에는 없는 가상요소로 디자인 장식 및 효과에 사용*/
+.carousel-window::before,
+.carousel-window::after {
+    content: "";
+    /* 가상요소 필수: 반드시 content 필요, 내용은 없음 */
+    position: absolute;
+    /* 부모를 기준으로 원하는 위치에 덮어쓰기??????? */
+    top: 0;
+    bottom: 0;
+    /* 위에서 아래 끝까지 */
+    width: 60px;
+    /* padding과 동일하게 */
+    z-index: 10;
+    /* z축 우선순위 정할때 클수록 눈앞으로 */
+    pointer-events: none;
+}
+
+/* 여기까지 좌우에 흐릿한 블러 처리해주는 역할 */
+
+.Ad-card{
+    filter: blur(4px);
+    opacity: 0.5;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.Ad-card.active {
+    filter: none;
+    opacity: 1;
+    z-index: 10;
+}
+
+
+
+
+.deactivate {
+
+    /* 왼쪽 끝 블러(좌->우 투명도) */
+    .carousel-window::before {
+        left: 0;
+        /* 왼쪽 기준 */
+        background: linear-gradient(to right, white 0%, transparent 100%);
+        /* 왼쪽은 흰색 → 오른쪽으로 갈수록 완전투명 */
+        /* 배경 컬러는 사이트 실제 컬러에 따라 바꿔도 됨 (예: 검정, 회색 등) */
+    }
+
+    /* 오른쪽 끝 블러(우->좌 투명도) */
+    .carousel-window::after {
+        right: 0;
+        /* 오른쪽 기준 */
+        background: linear-gradient(to left, white 0%, transparent 100%);
+    }
+
+    /* 
+        ::before / ::after → 동적인 DOM이 아닌, 시각효과/장식에 강력.
+        position: absolute → 내 기준점(보통 부모에 relative)에서 원하는 위치에 딱 붙일 때.
+        pointer-events: none → 가상요소(레이어) 뒤의 실제 버튼, 카드 등 클릭 가능하게 만듦.
+    */
+}
+
+
+
+/* ===================== [2단계] 트릭&카드 ===================  */
+
+.carousel-track {
+    display: flex;
+    flex-wrap: nowrap;
+    /* 기본값, 한 줄에 쭉 배열 */
+    transition: transform 0.7s cubic-bezier(.4, 0, .2, 1);
+    /* width는 JS에서 transform으로 이동 조절하므로 보통 지정하지 않음 */
+}
+
+.Ad-card {
+    flex: 0 0 100%;
+    /* 한 번에 1장씩 보이려면 100%, 2장씩이면 50% */
+    position: relative;
+    /* 내부 버튼,문구 overlay활용 (absolute) */
+    height: auto;
+    box-sizing: border-box;
+    /* 패딩, 보더까지 포함한 전체 크기로 계산해줌 */
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 카드 이미지 (비율, 채우기) */
+.Ad-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    /* 16:9 비율, 필요에 따라 조절 ********(반응형)******** */
+    object-fit: cover;
+    /* 내용 비율 꽉 차게, 이미지 왜곡 방지 */
+    display: block;
+}
+
+/* ===================== [3단계] 양 옆 Prev/Next 버튼 위치 & 디자인  ===================*/
+/* 예: <button>을 .carousel-window 안에 넣었을 때 */
+.carousel-window button {
+    position: absolute;
+    /* 부모(.carousel-window) 기준 원하는 위치(아래 1,2줄로 수직 중앙) */
+    top: 0;
+    transform: translateY(-50%);
+    z-index: 15;
+    /* 가상요소보다 위, 카드보다 앞 */
+    background: rgba(0, 0, 0, 0.3);
+    /* 반투명 검정 원형 배경 */
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    /* 완전 동그랗게 */
+    width: 44px;
+    height: 44px;
+    /* 버튼 크기 (가로/세로 같게) */
+    cursor: pointer;
+    /* 마우스 올리면 손가락 모양 */
+    transition: background 0.2s;
+    /* hover 시 색 부드럽게 전환 */
+}
+
+.carousel-window button:hover {
+    background: rgba(0, 0, 0, 0.6);
+    /* 오버시 좀 더 진하게 */
+}
+
+/* 버튼 위치: 첫번째(Prev)는 왼쪽, 두번째(Next)는 오른쪽 */
+.carousel-window button:first-of-type {
+    left: 18px;
+}
+
+.carousel-window button:last-of-type {
+    right: 18px;
+}
+
+
+/* 알아두면 좋을 거 같은데 오버레이 */
+/*  ==================== [4단계] 이미지 위 문구/버튼겹치기 (오버레이) ========================= */
+.card-overlay {
+    position: absolute;
+    /* 절대 위치로 카드 위에 겹치기 역할 */
+    bottom: 2rem;
+    /* 아래에서 32px 위 */
+    left: 4rem;
+    /* 가로 (좌우) 전체 할당 */
+    display: flex;
+    align-items: center;
+    z-index: 5;
+
+}
+
+
+
+/* “지금 시청하기” 버튼 스타일 */
+.btn-stream-now {
+    background: #fff;
+    font-weight: bold;
+    padding: 11px 21px;
+    border-radius: 9999px;
+    font-size: 17pgit a
+/* 카드 아래 설명 문구 스타일 */
+.card-overlay p {
+    color: #fff;
+    padding: 4px 18px;
+    border-radius: 12px;
+    margin-left: 18px;
+    font-size: 16px;
+}
+
+.Ad-bold {
+    font-weight: 500;
+}
+
+
+/* ===================== [5단계] dot 네비게이터 (필요시) ========================= */
+/* 일단 위에 구현후 나중에 추가 해볼 것 */
+/* .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 18px 0 0 0;
+}
+
+.carousel-dots button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.carousel-dots button.active {
+    background: #0071e3;
+} */
+
+
+
+/* 참고
+   - position: relative → absolute 자식(가상요소, 버튼, overlay 등) 위치 기준이 됨
+   - pointer-events: none → 가상요소 위에 마우스가 있어도 하위 레이어 이벤트(클릭, 드래그 등) 막지 않음
+   - ::before, ::after → 내용 없는 장식, fade, blur 효과 등에 자주 활용
+   - z-index로 레이어 순서 지정(크면 위)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  광고배너 사진들 주소
+더 캐니언 https://is1-ssl.mzstatic.com/image/thumb/HsJqgEXXaevqJ94-tyz0jQ/980x551.jpg
+테드 래소 https://is1-ssl.mzstatic.com/image/thumb/EviF5KEP5X6ycr0I5QR_IA/980x551.jpg
+파친코 https://is1-ssl.mzstatic.com/image/thumb/hCfBMF1R8mitgipZtRrJIw/980x551.jpg
+세브란스 : 단절 https://is1-ssl.mzstatic.com/image/thumb/vWrruv_JuOZkCwWQG6ZVWw/980x551.jpg
+F1 더 무비 https://is1-ssl.mzstatic.com/image/thumb/jKsrHHJKf192OLDN6kMh4g/980x551.jpg
+영광을 향하여 https://is1-ssl.mzstatic.com/image/thumb/71SCc2C4bOuYVD9-3P-PQw/980x551.jpg
+지하창고 사일로 https://is1-ssl.mzstatic.com/image/thumb/SSVr2ZxJ3bUc655YFoRy1Q/980x551.jpg
+마스터스 오브 디 에어 https://is1-ssl.mzstatic.com/image/thumb/PpNA7zp0nJJN23khb-XDUw/980x551.jpg
+모나크 https://is1-ssl.mzstatic.com/image/thumb/xO0BO6SH877VpYQg4t5yjw/980x551.jpg
+*/
