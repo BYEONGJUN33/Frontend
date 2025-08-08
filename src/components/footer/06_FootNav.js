@@ -3,7 +3,7 @@ const FootNav = () => {
 
     return(
         <>
-        <footer class="footer">
+        {/* <footer class="footer"> */}
         <nav className="footer-nav">
 
             <div>
@@ -136,7 +136,7 @@ const FootNav = () => {
             </div>
 
         </nav>
-        </footer>
+        {/* </footer> */}
 </>
     )
 }

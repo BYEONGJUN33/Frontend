@@ -7,11 +7,12 @@ import FooterBottom from "./07_FooterBottom";
 const FooterWrap = () => {
     
     return (
-        <>
+        <div className="footer">
+        
                 <FootNote />
                 <FootNav />
                 <FooterBottom />
-        </>
+        </div>
     )
 }
 export default FooterWrap

@@ -1,0 +1,139 @@
+
+
+/* 공용 버튼들 디자인 하기 / (더 알아보기), (쇼핑하기 ) / Apple intelligence 무지개 문구  */
+
+/* 빈 div 상자  */
+.spacer {
+    height: 360px;
+}
+
+.spacer-sub {
+    height: 280px;
+}
+
+
+/* 버튼들 위에 마진 */
+.btn-top {
+    margin-top: 18px;
+    height: 44px;
+}
+
+
+/* 더 알아보기 */
+.btn-learn {
+    border: 1px;
+    background-color: #0071e3;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    min-width: 28px;
+    padding: 11px 21px;
+    border-radius: 980px;
+    font-weight: 400;
+    white-space: nowrap;
+    /* 이게 줄어들어도 안 망가지는 거네.. */
+    height: 44px;
+}
+
+.btn-learn:hover {
+    background-color: #0077eD;
+    color: #fff;
+}
+
+
+
+/* 쇼핑하기 및 구입하기 */
+.btn-shop {
+    border: 1px;
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 17px;
+    font-weight: 400;
+    min-width: 28px;
+    padding: 11px 21px;
+    border-style: solid;
+    border-radius: 9999px;
+    border-width: 1px;
+    border-color: #0066cc;
+    margin-left: 13px;
+    height: 44px;
+
+}
+
+.btn-shop:hover {
+    background-color: #0077eD;
+    color: #fff;
+}
+
+
+
+/* Apple intelligence */
+.subhead {
+    margin-top: 6px;
+    height: 44px;
+    word-break: keep-all;
+    line-height: 44px;
+    /* 높이와 동일 크기로 중앙정렬 된다. */
+    /* white-space: nowrap; */
+}
+
+.ai-gradient {
+    background: linear-gradient(90deg, #31a8ff, #6e56fd, #ea4c89, #ee8700);
+    /* 무지개 느낌의 색상 조합 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* 위 두줄이 텍스트에만 그라데이션 적용하는 역할 */
+    font-size: 24px;
+    font-weight: bold;
+    background-clip: text;
+    /* 크로스 브라우저? */
+    /* text-fill-color: transparent; */
+
+    margin: 16px 0 0 0;
+    /* 왜 마진이 안먹지? */
+
+    /* height: 27px;
+    width: 100%; */
+
+}
+
+.callout {
+    font-size: 14px;
+    letter-spacing: 0.168px;
+    color: #6e6e73;
+    word-break: keep-all;
+    height: 19px;
+}
+
+
+
+
+/* 여기가 그 배너들 문구 디자인 css파트 */
+.main h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    word-break: keep-all;
+}
+
+.main a {
+    text-decoration: none;
+}
+
+.item-intro {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 5px;
+    letter-spacing: .012em;
+}
+
+.bg-link {
+    /* display: block; */
+    width: 300px;
+    height: 200px;
+    /* background-image: url('/'); */
+    background-size: cover;
+    background-position: center;
+}
+

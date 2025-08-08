@@ -1,0 +1,51 @@
+
+
+.hero-banner {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border-bottom-width: 12px;
+    /* 이거 필요한가? 위에 태그 ? 나중에 확인  */
+    text-align: center;
+    padding-bottom: 12px;
+    gap: 12px;
+    height: 2130px;
+    width: 100%;
+
+}
+
+.card-iPhone {
+    background-image: url(https://www.apple.com/kr/home/images/heroes/iphone-family/hero_iphone_family__fuz5j2v5xx6y_largetall_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 53px;
+
+}
+
+.card-MacBook-Air {
+    background-image: url(https://www.apple.com/v/home/cg/images/heroes/macbook-air/hero_macbook_air_avail__fpm99qgohx2e_largetall_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 53px;
+    padding-bottom: 23px;
+
+}
+
+.card-iPadPro {
+    background-image: url(https://www.apple.com/v/home/cg/images/heroes/ipad-pro/hero_ipadpro_avail__d6ddfjws77ue_largetall.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 53px;
+    color: white;
+
+}

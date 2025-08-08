@@ -1,0 +1,98 @@
+.Sub-banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    width: 100%;
+    gap: 12px;
+    border-bottom: 12px;
+    border-style: solid;
+    border-color: white;
+
+}
+
+
+.card-Pay {
+    background-image: url(https://www.apple.com/kr/home/images/promos/apple-transit/promo_transit_iphone__eysxqd50mwa6_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+}
+
+.card-iPadair {
+    background-image: url(https://www.apple.com/v/home/cg/images/promos/ipad-air/promo_ipad_air__bfbxzvw65c02_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+}
+
+.card-WATCH {
+    background-image: url(https://www.apple.com/v/home/cg/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail_lte__c70y29goir42_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+}
+
+.card-MacBookPro {
+    background-image: url(https://www.apple.com/v/home/cg/images/promos/macbook-pro/promo_macbookpro_announce__gdf98j6tj2ie_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+    color: white;
+}
+
+.card-Airpods4-Air {
+    display: block;
+    /* a태그는 기본 inline이어서 블록으로 변경해줘야함 */
+    background-image: url(https://www.apple.com/v/home/cg/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+    color: white;
+
+}
+
+.Sub-card-flex {
+    height: 100%;
+    /* 높이 줬더니 flex-end 먹힘.. */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 42px;
+
+}
+
+/* 위에 에어팟 배너가 모범 답안이라 이런식으로 전체 교정해야함 */
+
+
+.card-TradeIn {
+    background-image: url(https://www.apple.com/v/home/cg/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(50% - 14px);
+    height: 550px;
+}
+
+.Sub-banner-container h3 {
+    margin-top: 42px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: .002em;
+    /* width: 90%;
+    max-width: 330px;
+    text-align: center; */
+
+}

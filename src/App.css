@@ -72,176 +72,54 @@ body {
 /* 헤더 시작 */
 
 #globalheader {
-    position: fixed;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    right: 0;
-    left: 0;
-    top: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 3;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    /* 색상지정에 약간 불투명 */
-    backdrop-filter: blur(10px);
-    /* 약간의 투명 + 블러 효과  */
-    height: 44px;
-    max-height: 44px;
-
-
+/* styled  */
 }
 
-.headernav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    gap: 24px;
-    font-weight: normal;
-    /* font-weight: bold; */
-    /* margin: 0 -8px; */
-}
 
-.headernav li {
-    padding: 0 9px;
-}
 
-.headernav a {
-    color: black;
-    text-decoration: none;
-
-}
 
 /*                   main파트 시작                 */
 
 .hero-banner {
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    border-bottom-width: 12px;
-    /* 이거 필요한가? 위에 태그 ? 나중에 확인  */
-    text-align: center;
-    padding-bottom: 12px;
-    gap: 12px;
-    height: 2130px;
-    width: 100%;
-
 }
 
 .card-iPhone {
-    background-image: url(https://www.apple.com/kr/home/images/heroes/iphone-family/hero_iphone_family__fuz5j2v5xx6y_largetall_2x.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    padding-top: 53px;
-
 }
 
 .card-MacBook-Air {
-    background-image: url(https://www.apple.com/v/home/cg/images/heroes/macbook-air/hero_macbook_air_avail__fpm99qgohx2e_largetall_2x.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    padding-top: 53px;
-    padding-bottom: 23px;
-
 }
 
 .card-iPadPro {
-    background-image: url(https://www.apple.com/v/home/cg/images/heroes/ipad-pro/hero_ipadpro_avail__d6ddfjws77ue_largetall.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    padding-top: 53px;
-    color: white;
-
 }
 
 /*              서브 카트 파트 시작                  */
 .Sub-banner-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    /* align-items: center; */
-    text-align: center;
-    width: 100%;
-    gap: 12px;
-    border-bottom: 12px;
-    border-style: solid;
-    border-color: white;
 
 }
 
 
 .card-Pay {
-    background-image: url(https://www.apple.com/kr/home/images/promos/apple-transit/promo_transit_iphone__eysxqd50mwa6_large.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: calc(50% - 14px);
-    height: 550px;
+
 }
 
 .card-iPadair {
-    background-image: url(https://www.apple.com/v/home/cg/images/promos/ipad-air/promo_ipad_air__bfbxzvw65c02_large.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: calc(50% - 14px);
-    height: 550px;
+
 }
 
 .card-WATCH {
-    background-image: url(https://www.apple.com/v/home/cg/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail_lte__c70y29goir42_large.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: calc(50% - 14px);
-    height: 550px;
+
 }
 
 .card-MacBookPro {
-    background-image: url(https://www.apple.com/v/home/cg/images/promos/macbook-pro/promo_macbookpro_announce__gdf98j6tj2ie_large.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: calc(50% - 14px);
-    height: 550px;
-    color: white;
+
 }
 
 .card-Airpods4-Air {
-    display: block;
-    /* a태그는 기본 inline이어서 블록으로 변경해줘야함 */
-    background-image: url(https://www.apple.com/v/home/cg/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: calc(50% - 14px);
-    height: 550px;
-    color: white;
+
 
 }
 
 .Sub-card-flex {
-    height: 100%;
-    /* 높이 줬더니 flex-end 먹힘.. */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 42px;
 
 }
 
@@ -249,12 +127,7 @@ body {
 
 
 .card-TradeIn {
-    background-image: url(https://www.apple.com/v/home/cg/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: calc(50% - 14px);
-    height: 550px;
+
 }
 
 
@@ -431,154 +304,6 @@ body {
 
 
 
-
-
-/* 공용 버튼들 디자인 하기 / (더 알아보기), (쇼핑하기 ) / Apple intelligence 무지개 문구  */
-
-/* 빈 div 상자  */
-.spacer {
-    height: 360px;
-}
-
-.spacer-sub {
-    height: 300px;
-}
-
-
-/* 버튼들 위에 마진 */
-.btn-top {
-    margin-top: 18px;
-    height: 44px;
-}
-
-
-/* 더 알아보기 */
-.btn-learn {
-    border: 1px;
-    background-color: #0071e3;
-    color: #fff;
-    font-size: 17px;
-    text-decoration: none;
-    min-width: 28px;
-    padding: 11px 21px;
-    border-radius: 980px;
-    font-weight: 400;
-    white-space: nowrap;
-    /* 이게 줄어들어도 안 망가지는 거네.. */
-    height: 44px;
-}
-
-.btn-learn:hover {
-    background-color: #0077eD;
-    color: #fff;
-}
-
-
-/* 쇼핑하기 및 구입하기 */
-.btn-shop {
-    border: 1px;
-    text-decoration: none;
-    color: #0066cc;
-    font-size: 17px;
-    font-weight: 400;
-    min-width: 28px;
-    padding: 11px 21px;
-    border-style: solid;
-    border-radius: 9999px;
-    border-width: 1px;
-    border-color: #0066cc;
-    margin-left: 13px;
-    height: 44px;
-
-}
-
-.btn-shop:hover {
-    background-color: #0077eD;
-    color: #fff;
-}
-
-
-
-/* Apple intelligence */
-.subhead {
-    margin-top: 6px;
-    height: 44px;
-    word-break: keep-all;
-    line-height: 44px;
-    /* 높이와 동일 크기로 중앙정렬 된다. */
-    /* white-space: nowrap; */
-}
-
-.ai-gradient {
-    background: linear-gradient(90deg, #31a8ff, #6e56fd, #ea4c89, #ee8700);
-    /* 무지개 느낌의 색상 조합 */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* 위 두줄이 텍스트에만 그라데이션 적용하는 역할 */
-    font-size: 24px;
-    font-weight: bold;
-    background-clip: text;
-    /* 크로스 브라우저? */
-    /* text-fill-color: transparent; */
-
-    margin: 16px 0 0 0;
-    /* 왜 마진이 안먹지? */
-
-    /* height: 27px;
-    width: 100%; */
-
-}
-
-.callout {
-    font-size: 14px;
-    letter-spacing: 0.168px;
-    color: #6e6e73;
-    word-break: keep-all;
-    height: 19px;
-}
-
-
-
-
-/* 여기가 그 배너들 문구 디자인 css파트 */
-.main h2 {
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 56px;
-    word-break: keep-all;
-}
-
-.main a {
-    text-decoration: none;
-}
-
-.item-intro {
-    font-size: 24px;
-    font-weight: 400;
-    margin-top: 5px;
-    letter-spacing: .012em;
-}
-
-.bg-link {
-    /* display: block; */
-    width: 300px;
-    height: 200px;
-    /* background-image: url('/'); */
-    background-size: cover;
-    background-position: center;
-}
-
-.Sub-banner-container h3 {
-    margin-top: 42px;
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: .002em;
-    /* width: 90%;
-    max-width: 330px;
-    text-align: center; */
-
-}
 
 .Sub-banner-container
 /* ========================== Ad 배너 영역 시작 ============================ */
@@ -847,3 +572,6 @@ F1 더 무비 https://is1-ssl.mzstatic.com/image/thumb/jKsrHHJKf192OLDN6kMh4g/98
 마스터스 오브 디 에어 https://is1-ssl.mzstatic.com/image/thumb/PpNA7zp0nJJN23khb-XDUw/980x551.jpg
 모나크 https://is1-ssl.mzstatic.com/image/thumb/xO0BO6SH877VpYQg4t5yjw/980x551.jpg
 */
+
+
+

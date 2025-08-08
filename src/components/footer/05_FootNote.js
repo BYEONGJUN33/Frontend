@@ -3,7 +3,7 @@ const FootNote = () => {
 
     return (
         <>
-            <footer class="footer">
+            {/* <footer class="footer"> */}
                 <section className="footer-notes">
                     <ul>
                         <li>1. Apple&nbsp;Intelligence는 Siri 및 기기 언어를 한국어, 중국어(간체), 영어(오스트레일리아, 캐나다, 인도, 아일랜드, 뉴질랜드, 싱가포르, 남아프리카
@@ -35,7 +35,7 @@ const FootNote = () => {
                             대한민국에서는 선불형 티머니 카드만 Apple&nbsp;지갑&nbsp;속 교통카드로 사용이&nbsp;지원됩니다.</li>
                     </ul>
                 </section>
-                </footer>
+                {/* </footer> */}
         </>
     )
 }

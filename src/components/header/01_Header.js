@@ -1,11 +1,36 @@
+import styled from "styled-components"
+import style from "./01_Header.module.css"
+
+// Css-In-JS 라이브러리로 JS 안에 CSS 작성하게하는 것이며 뒤에 백틱으로 사용가능 
+const GlobalHeader = styled.div`
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    /* 색상지정에 약간 불투명 */
+    backdrop-filter: blur(10px);
+    /* 약간의 투명 + 블러 효과  */
+    height: 44px;
+    max-height: 44px; 
+    `
+
 const Header = () => {
 
     return (
         // JSX
         <>
-            <div id="globalheader">
+            <GlobalHeader>
                 <nav id="globalnav">
-                    <ul className="headernav">
+                    <ul className={style.headernav}>
                         <li><a href="/" className="logo" aria-label="Apple Home">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 className="bi bi-apple" viewBox="0 0 16 16">
@@ -64,7 +89,7 @@ const Header = () => {
                         </a></li>
                     </ul>
                 </nav>
-            </div>
+            </GlobalHeader>
         </>
     )
 }
